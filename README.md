@@ -1,16 +1,40 @@
-# React + Vite
+# Mouse Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+지정된 영역 안에서 마우스의 움직임과 클릭 위치를 시각적으로 확인할 수 있는 React 학습 프로젝트입니다.
 
-Currently, two official plugins are available:
+## 주요 기능
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+마우스의 현재 X, Y 좌표를 실시간으로 표시
 
-## React Compiler
+마우스 움직임에 따라 파란색 포인터 이동
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+클릭한 위치에 초록색 원형 표시 생성
 
-## Expanding the ESLint configuration
+여러 번 클릭한 위치를 화면에 누적하여 표시
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+화면 전체가 아닌 트래킹 영역을 기준으로 좌표 계산
+
+## 기술 스택
+
+React
+
+JavaScript
+
+Vite
+
+CSS
+
+## 학습 내용
+
+마우스 이동 및 클릭 이벤트 처리
+
+getBoundingClientRect()를 활용한 요소 내부 좌표 계산
+
+useState를 활용한 현재 위치와 클릭 기록 관리
+
+상태값에 따른 동적 스타일 적용
+
+## 실행 방법
+
+npm install
+npm run dev
